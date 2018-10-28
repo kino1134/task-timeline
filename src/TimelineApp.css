@@ -1,0 +1,36 @@
+#timeline-app {
+  padding-top: 10px;
+}
+
+#timeline-app .container:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.rct-sidebar-row, .rct-label-group, .rct-item-content {
+  font-weight: 600;
+}
+
+.rct-item.complete {
+  background-color: #98a7aa !important;
+}
+.rct-item.complete .rct-item-content {
+  text-decoration: line-through;
+}
+
+.rct-item-content {
+  color: #000;
+  word-break: keep-all;
+  overflow: visible !important;
+}
+
+.file-input {
+  height: 0.01em;
+  width: 0.01em;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.clickable .has-icon {
+  margin-right: .5em;
+}
