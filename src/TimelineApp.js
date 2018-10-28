@@ -549,7 +549,7 @@ class TimelineApp extends Component {
         end_time = this.state.maxTime
         start_time = end_time - (moment(target.end_time).subtract(target.start_time.valueOf()))
       }
-      const newItem = { ...target, start_time, end_time }
+      const newItem = { ...target, start_time: moment(start_time), end_time: moment(end_time) }
       this.setState({items: [
         ...this.state.items.slice(0, index),
         newItem,
