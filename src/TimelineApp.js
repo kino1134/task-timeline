@@ -235,6 +235,7 @@ class TimelineApp extends Component {
                 </p>
                 <p className="control">
                   <input id="maxTime" className="input" name="maxTime"
+                    data-bulma-calendar="true" type="text" data-date-format="YYYY/MM/DD"
                     defaultValue={moment(this.state.maxTime).subtract(1, 'day').format('YYYY/MM/DD')}
                   />
                 </p>
